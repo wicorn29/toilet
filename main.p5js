@@ -1,0 +1,20 @@
+let iframe;
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  iframe = createElement('iframe', '');
+  iframe.attribute('src', 'https://example.com');
+  iframe.attribute('allowfullscreen', '');
+  iframe.attribute('frameborder', '0');
+  iframe.size(windowWidth, windowHeight);
+  iframe.position(0, 0);
+}
+
+function draw() {
+  background(0, 0);
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  iframe.size(windowWidth, windowHeight);
+}
