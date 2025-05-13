@@ -3,7 +3,7 @@ let iframe;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   iframe = createElement('iframe', '');
-  iframe.attribute('src', 'https://example.com');
+  iframe.attribute('src', 'https://wicorn29.github.io/toilet/index.html');
   iframe.attribute('allowfullscreen', '');
   iframe.attribute('frameborder', '0');
   iframe.size(windowWidth, windowHeight);
